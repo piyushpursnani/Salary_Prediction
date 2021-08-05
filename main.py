@@ -27,4 +27,5 @@ def predict():
     return render_template('base.html', prediction_text = f"employee salary will be $ {output}")
 
 
-app.run(debug =True)
+if __name__=='main':
+    app.run(debug =True)
